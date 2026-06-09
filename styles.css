@@ -739,7 +739,7 @@ h1 {
   .rail-links a:first-child { border-top: 0; }
   .rail-bottom { display: none; }
   .page { margin-left: 0; padding-bottom: 74px; }
-  .wrap { width: min(92vw, var(--max)); }
+  .wrap { width: min(calc(100vw - 40px), var(--max)); }
   .top-strip {
     display: flex;
     min-height: auto;
@@ -762,6 +762,16 @@ h1 {
     width: fit-content;
     height: auto;
     padding: 8px 12px;
+  }
+  .photo-card,
+  .timeline-card,
+  .case,
+  .project-card,
+  .research-card,
+  .education-card,
+  .cert-item,
+  .skill {
+    box-shadow: 4px 4px 0 var(--line);
   }
   .skills, .project-grid, .cert-list { grid-template-columns: 1fr; }
   .cert-group.two-col,
