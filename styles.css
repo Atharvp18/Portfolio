@@ -191,7 +191,7 @@ body {
 .hero {
   min-height: calc(100vh - 54px);
   display: grid;
-  grid-template-columns: 1.25fr .75fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 430px);
   gap: 30px;
   align-items: center;
   padding: 34px 0 54px;
@@ -268,13 +268,16 @@ h1 {
   background: var(--card);
   padding: 10px;
   box-shadow: 10px 10px 0 var(--line);
+  justify-self: end;
   transform: rotate(1.5deg);
+  width: min(100%, 430px);
 }
 .photo-card img {
   width: 100%;
-  height: min(68vh, 640px);
-  object-fit: cover;
-  object-position: center 22%;
+  height: auto;
+  max-height: min(72vh, 700px);
+  object-fit: contain;
+  object-position: center top;
   display: block;
 }
 .section {
