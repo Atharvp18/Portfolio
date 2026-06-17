@@ -234,10 +234,11 @@ h1 {
 .word:nth-child(3) { background: var(--green); color: #fff; }
 .word:nth-child(4) { background: var(--red); color: #fff; }
 .lede {
-  max-width: 720px;
+  max-width: 600px;
   color: var(--muted);
   font-size: 20px;
   margin: 20px 0 0 84px;
+  padding-right: 24px;
 }
 .actions {
   display: flex;
